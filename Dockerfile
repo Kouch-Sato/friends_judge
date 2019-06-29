@@ -24,7 +24,10 @@ RUN apk update && \
       tzdata \
       yaml-dev \
       zlib-dev \
-      nodejs
+      nodejs \
+      yarn
+
+RUN yarn install
 
 # Set working directory
 WORKDIR $APP_HOME

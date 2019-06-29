@@ -4,6 +4,17 @@
 # Setup
 - docker-compose exec app bin/rails webpacker:install
 
+# model, fixture, ruoteに注釈をつける
+```
+docker-compose exec app bundle exec annotate
+docker-compose exec app bundle exec annotate -r
+```
+
+# gem install
+```
+docker-compose exec app bundle install      
+```
+
 # Errors
 ```
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_29_111214) do
+ActiveRecord::Schema.define(version: 2019_06_30_014814) do
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.integer "user_id"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_06_29_111214) do
 
   create_table "reviews", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.integer "book_id"
-    t.integer "type"
+    t.integer "review_type"
     t.string "content"
     t.integer "status"
     t.integer "user_id"

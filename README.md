@@ -1,21 +1,26 @@
 # friends_judge
 みんなの通信簿
 
-# Setup
+## Setup
 - docker-compose exec app bin/rails webpacker:install
 
-# model, fixture, ruoteに注釈をつける
+## テストデータ作成
+```
+- docker-compose exec app bin/rails db:fixtures:load
+```
+
+## model, fixture, ruoteに注釈をつける
 ```
 docker-compose exec app bundle exec annotate
 docker-compose exec app bundle exec annotate -r
 ```
 
-# gem install
+## gem install
 ```
 docker-compose exec app bundle install      
 ```
 
-# Errors
+## Errors
 ```
 
 

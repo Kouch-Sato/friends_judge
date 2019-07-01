@@ -2,28 +2,28 @@
 #
 # Table name: reviews
 #
-#  id         :bigint           not null, primary key
-#  book_id    :integer
-#  type       :integer
-#  content    :string(255)
-#  status     :integer
-#  user_id    :integer
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id          :bigint           not null, primary key
+#  book_id     :integer
+#  review_type :integer
+#  content     :string(255)
+#  status      :integer
+#  user_id     :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
 #
 
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  book_id: 1
-  type: 1
-  content: MyString
-  status: 1
-  user_id: 1
+  book: kouch-book1
+  review_type: 1
+  content: 自信家でかっこいい
+  status: 10
+#  user_id: nil
 
 two:
-  book_id: 1
-  type: 1
-  content: MyString
-  status: 1
-  user_id: 1
+  book: kouch-book1
+  review_type: 2
+  content: スペ語17点
+  status: 10
+#  user_id: nil

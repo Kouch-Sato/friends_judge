@@ -619,7 +619,7 @@
   /**
    * HtmlEncodes the given value
    */
-  var htmlEncodeContainer = $('<div />');
+  var htmlEncodeContainer = jQuery('<div />');
 
   function htmlEncode(value) {
     if (value) {
@@ -679,7 +679,7 @@
    * Initialize tagsinput behaviour on inputs and selects which have
    * data-role=tagsinput
    */
-  $(function() {
+  jQuery(function() {
     $("input[data-role=tagsinput], select[multiple][data-role=tagsinput]").tagsinput();
   });
 })(window.jQuery);
